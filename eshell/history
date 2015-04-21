@@ -1,0 +1,23 @@
+ls -l skk.el
+ls -la
+ls -la ..
+ls
+ls
+woman w3m
+w3m --help
+apt-get --help
+ruby dict.rb 
+ruby dict.rb 
+ruby dict.rb 
+ruby dict.rb
+ruby dict.rb
+ruby dict.rb 
+pcmanfm &
+cd /usr/share/iceweasel/
+ls
+cd $HOME/Downloads/
+ls
+pcmanfm &
+pcmanfm &
+wi0
+wi

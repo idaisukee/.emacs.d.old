@@ -1,0 +1,14 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".hatena.ne.jp"
+  [url-cookie "b" "$1$iW9Rq5lk$bk9Gm6niEjAQ3.gXK1m.g1" "23 Nov 34 12:17:56 [GMT]" "/" ".hatena.ne.jp" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:
