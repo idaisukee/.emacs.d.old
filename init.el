@@ -111,7 +111,7 @@
 (setq inhibit-startup-message t)
  
 
-
+(setq shift-select-mode nil)
 
 
 (defun my-buffer-menu nil
