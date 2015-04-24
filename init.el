@@ -1,14 +1,15 @@
-;;; (require 'w3m)
+;;;; (require 'w3m)
 
 
 (require 'cl)
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/ddskk")
 (add-to-list 'load-path "~/.emacs.d/auto-install")
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (add-to-list 'load-path "~/.emacs.d/emacs-w3m-1.4.4")
-(add-to-list 'load-path "/usr/share/emacs24/site-lisp/ddskk")
+;;(add-to-list 'load-path "/usr/share/emacs24/site-lisp/ddskk")
 (add-to-list 'load-path "~/.emacs.d/twittering-mode-3.0.0")
 
 (global-whitespace-mode -1)
@@ -188,12 +189,12 @@
 
 (setq el-get-dir "~/.emacs.d/elisp/el-get/")
 
-(unless (require 'el-get nil 'noerror)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
-    (goto-char (point-max))
-    (eval-print-last-sexp)))
+;; (unless (require 'el-get nil 'noerror)
+;;   (with-current-buffer
+;;       (url-retrieve-synchronously
+;;        "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+;;     (goto-char (point-max))
+;;     (eval-print-last-sexp)))
 
-(el-get 'sync)
-(add-to-list 'el-get-recipe-path "~/.emacs.d/recipes")
+;; (el-get 'sync)
+;; (add-to-list 'el-get-recipe-path "~/.emacs.d/recipes")
