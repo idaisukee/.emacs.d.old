@@ -25,6 +25,7 @@
 (global-unset-key [f10])
 (global-set-key (kbd "C-b") 'delete-backward-char)
 (global-set-key (kbd "C-S-b") 'backward-kill-word)
+(global-set-key (kbd "C-S-k") 'move-line-to-opposite-window)
 
 (global-set-key (kbd "C-S-s") 'isearch-backward)
 

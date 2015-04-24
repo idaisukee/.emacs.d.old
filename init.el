@@ -55,6 +55,9 @@
   (find-file "~/.emacs.d/init.el"))
 
 
+
+
+
 ;;;(add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install/"))
 (require 'auto-install)
 (auto-install-update-emacswiki-package-name t)
@@ -157,6 +160,7 @@
 (require 'dired-init)
 (require 'ruby-init)
 (require 'php-mode-init)
+(require 'my-function-init)
 ;(require 'package-init)
 
 (set-face-background 'hl-line "cyan4")
