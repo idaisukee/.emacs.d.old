@@ -3,5 +3,5 @@
 
 (setq savehist-minibuffer-history-variables '(minibuffer-history file-name-history extended-command-history))
 (setq minibuffer-history '("shell"))
-(setq file-name-history '("~"))
-(setq extended-command-history '("df" "dired"))
+(setq file-name-history '("~/.emacs.d/site-lisp/ddskk/" "~/.emacs.d/skk-init.el" "~/.emacs.d/my-function-init.el" "~/" "~"))
+(setq extended-command-history '("dired" "df" "dired"))

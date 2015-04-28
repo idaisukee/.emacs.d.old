@@ -3,7 +3,7 @@
 
 
 
-
+(require 'skk)
 
 (add-hook 'skk-j-mode-hook
 	  '(lambda ()
