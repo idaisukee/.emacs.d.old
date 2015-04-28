@@ -3,8 +3,6 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (require 'load-path-init)
 
-
-
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 (setq uniquify-ignore-buffers-re "*[^*]+*")
@@ -78,7 +76,6 @@
 (require 'php-mode-init)
 (require 'my-function-init)
 (require 'ibuffer-init)
-
 (require 'misc-init)
 ;(require 'package-init)
 
