@@ -1,70 +1,22 @@
 ;;;; (require 'w3m)
-
-
 (require 'cl)
 (add-to-list 'load-path "~/.emacs.d/")
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
-(add-to-list 'load-path "~/.emacs.d/site-lisp/ddskk")
-(add-to-list 'load-path "~/.emacs.d/auto-install")
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(require 'load-path-init)
 
-(add-to-list 'load-path "~/.emacs.d/emacs-w3m-1.4.4")
-;;(add-to-list 'load-path "/usr/share/emacs24/site-lisp/ddskk")
-(add-to-list 'load-path "~/.emacs.d/twittering-mode-3.0.0")
 
-(global-whitespace-mode -1)
-(blink-cursor-mode -1)
-(global-hl-line-mode 1)
-
-(savehist-mode 1)
-(show-paren-mode 1)
-;;;(display-time)
-(line-number-mode 1)
-(column-number-mode 1)
-(transient-mark-mode 1)
-(setq message-log-max 10000)
-(setq enable-recursive-minibuffers t)
-(setq use-dialog-box nil)
-(defalias 'message-box 'message)
-(setq history-length 1000)
-(setq echo-keystrokes 0.1)
-(defalias 'yes-or-no-p 'y-or-n-p)
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 (setq uniquify-ignore-buffers-re "*[^*]+*")
 
 
-
-
-(add-hook 'ibuffer-mode-hook
-	  '(lambda ()
-	     (define-key ibuffer-mode-map (kbd "C-t") 'previous-line)
-	     (define-key ibuffer-mode-map (kbd "<f2>") 'my-buffer-menu2)
-	     (define-key ibuffer-mode-map (kbd "M-o") 'find-file)))
-;;;	     (define-key ibuffer-mode-map (kbd "") 'previous-line)
-;;;	     (global-set-key [f2] 'my-buffer-menu2)
-;;;	     (global-unset-key (kbd "o"))))
-
-
-
-
-
-(defun open-init-el nil
-  (interactive)
-  (find-file "~/.emacs.d/init.el"))
-
-
-
-
-
 ;;;(add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install/"))
-(require 'auto-install)
-(auto-install-update-emacswiki-package-name t)
-(auto-install-compatibility-setup)
+;;;(require 'auto-install)
+;;;(auto-install-update-emacswiki-package-name t)
+;;;(auto-install-compatibility-setup)
 
 ;;;(powerline-default-theme)
-;(add-to-list 'load-path "~/.emacs.d/site-lisp/")
+
 ;(require 'lispxmp)
 ;(require 'package)
 ;(setq package-user-dir "~/.emacs.d/elisp/elpa/")
@@ -81,11 +33,6 @@
 
 (setq eshell-cmpl-ignore-case t)
 
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
-
-
 ;;;(require 'anything-startup)
 ;;;(require 'auto-install)
 ;;;(require 'twit)
@@ -95,38 +42,9 @@
 
 (setq open-junk-file-format "~/program/junk/%Y/%m/%Y-%m-%d-%H%M%S.")
 
-
-
-
-
-
-
-
-
 ;;;(aset keyboard-translate-table ?\<tab> ?\M-x)
 ;;;(if window-system
 ;;;  )
-
-(setq scroll-step 1)
-(setq inhibit-startup-message t)
- 
-
-(setq shift-select-mode nil)
-
-
-(defun my-buffer-menu nil
-  (interactive)
-  (buffer-menu-other-window)
-  (other-window 0))
-
-(defun my-buffer-menu2 nil
-  (interactive)
-  (ibuffer-other-window)
-  (other-window 0))
-
-
-(add-to-list 'load-path "~/.emacs.d/elisp/")
-
 
 (require 'smart-compile)
 
@@ -145,8 +63,6 @@
   (package-initialize))
 
 
-
-
 (require 'skk-init)
 (require 'keybind-init)
 (require 'twit-init)
@@ -161,6 +77,9 @@
 (require 'ruby-init)
 (require 'php-mode-init)
 (require 'my-function-init)
+(require 'ibuffer-init)
+
+(require 'misc-init)
 ;(require 'package-init)
 
 (set-face-background 'hl-line "cyan4")
@@ -185,9 +104,6 @@
  '(whitespace-space ((t (:background "black" :foreground "darkgray"))))
  '(whitespace-tab ((t (:background "black" :foreground "darkgray")))))
 
-(autoload 'mew "mew" nil t)
-(autoload 'mew-send "mew" nil t)
-(setq mew-fcc "+outbox") ; 送信メールを保存
 (setq exec-path (cons "/usr/bin" exec-path))
 
 

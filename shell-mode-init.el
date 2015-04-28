@@ -3,6 +3,9 @@
   (search-backward "daisuke@"))
 
 
+(when (eq window-system 'ns)
+;;;  (setq explicit-shell-file-name "/bin/zsh"))
+  (setq explicit-shell-file-name "/usr/local/bin/zsh"))
 (add-hook 'shell-mode-hook
 	  '(lambda ()
 	     (define-key shell-mode-map (kbd "C-S-t") 'comint-previous-input)

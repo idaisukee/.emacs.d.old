@@ -8,6 +8,7 @@
 (global-set-key "\C-z" nil)
 (global-set-key (kbd "C-z") 'skk-toggle-kana-and-latin)
 
+
 (global-set-key (kbd "C-S-v") 'scroll-down-command)
 
 (global-set-key [backtab] 'save-buffer)
