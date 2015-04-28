@@ -65,6 +65,7 @@
 (require 'keybind-init)
 (require 'twit-init)
 (require 'shell-mode-init)
+(require 'eshell-mode-init)
 (require 'org-init)
 (require 'appearance-at-x-init)
 (require 'appearance-at-ns-init)

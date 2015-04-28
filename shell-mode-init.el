@@ -13,11 +13,13 @@
 	     (define-key shell-mode-map (kbd "C-d") 'backward-char)
 	     (define-key shell-mode-map (kbd "M-t") 'go-to-the-last-command-line)))
 
-;;;(add-hook 'eshell-mode-hook
-;;;	  '(lambda ()
-;;;	     (define-key eshell-mode-map (kbd "C-t") 'eshell-previous-matching-input-from-input)
-;;;	     (define-key shell-mode-map (kbd "C-S-h") 'comint-next-input)
-;;;	     (define-key shell-mode-map (kbd "C-d") 'backward-char))
-;;;)
+
+
+(add-hook 'shell-mode-hook
+          #'(lambda ()
+              (setq comint-password-prompt-regexp
+                    (replace-regexp-in-string "for \\[\\^:\\]\\+" "for .+"
+                                              comint-password-prompt-regexp t t))))
+
 
 (provide 'shell-mode-init)
