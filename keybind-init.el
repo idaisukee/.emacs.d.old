@@ -43,12 +43,12 @@
 (global-set-key [f5] 'lispxmp)
 (global-set-key [f6] 'shell)
 (global-set-key (kbd "C-<f6>") 'eshell)
-(global-set-key (kbd "<f7>") 'toggle-skk-kutouten-type)
+(global-set-key (kbd "<f7>") 'toggle-and-print-skk-kutouten-type)
 
 
 
 ;;;(global-set-key [f7] 'eshell)
-(global-set-key [f8] 'toggle-jitai)
+(global-set-key [f8] 'toggle-and-print-jitai)
 (global-set-key (kbd "C-<f8>") 'show-lub)
 ;;;(global-set-key [f9] 'save-buffer)
 (global-set-key [f10] 'delete-window)
