@@ -1,3 +1,8 @@
+(autoload 'mew "mew" nil t)
+(autoload 'mew-send "mew" nil t)
+(setq mew-fcc "+outbox") ; 送信メールを保存
+
+
 ;;; Mew を使う為の設定
 ;(autoload 'mew "mew" nil t)
 ;(autoload 'mew-send "mew" nil t)

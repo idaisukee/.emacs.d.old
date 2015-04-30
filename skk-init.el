@@ -3,7 +3,7 @@
 
 
 
-
+(require 'skk)
 
 (add-hook 'skk-j-mode-hook
 	  '(lambda ()
@@ -81,6 +81,12 @@
    (kyuji-to-shinji))
    ((t nil))))
 
+(defun toggle-and-print-jitai nil
+  (interactive)
+  (toggle-jitai)
+  (princ skk-large-jisyo))
+
+
 (defun toggle-skk-kutouten-type nil
   (interactive)
   (cond
@@ -90,7 +96,11 @@
     (setq-default skk-kutouten-type 'en))
    ((t nil))))
 
-    
+(defun toggle-and-print-skk-kutouten-type nil
+  (interactive)
+  (toggle-skk-kutouten-type)
+  (princ skk-kutouten-type))
+   
    
 	  
 

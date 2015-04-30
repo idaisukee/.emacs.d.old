@@ -24,4 +24,17 @@
 	      (ibuffer-switch-to-saved-filter-groups "home")))
 (setq ibuffer-show-empty-filter-groups nil)
 
+(add-hook 'ibuffer-mode-hook
+	  '(lambda ()
+	     (define-key ibuffer-mode-map (kbd "C-t") 'previous-line)
+	     (define-key ibuffer-mode-map (kbd "<f2>") 'my-buffer-menu2)
+	     (define-key ibuffer-mode-map (kbd "M-o") 'find-file)))
+;;;	     (define-key ibuffer-mode-map (kbd "") 'previous-line)
+;;;	     (global-set-key [f2] 'my-buffer-menu2)
+;;;	     (global-unset-key (kbd "o"))))
+
+
+
+
+
 (provide 'ibuffer-init)
