@@ -146,7 +146,7 @@
 
 
 
-
+(require 'my-function-init)
 (require 'skk-init)
 (require 'keybind-init)
 (require 'twit-init)
@@ -160,7 +160,9 @@
 (require 'dired-init)
 (require 'ruby-init)
 (require 'php-mode-init)
-(require 'my-function-init)
+
+(require 'ibuffer-init)
+
 ;(require 'package-init)
 
 (set-face-background 'hl-line "cyan4")
@@ -176,6 +178,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(button ((t (:background "white" :foreground "black" :weight light))))
  '(comint-highlight-prompt ((t (:inherit minibuffer-prompt :foreground "cyan1" :inverse-video t))))
  '(completions-common-part ((t (:inherit default :background "black" :foreground "yellow" :slant normal :weight normal :height 150 :width normal))))
  '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face :foreground "HotPink4"))))
