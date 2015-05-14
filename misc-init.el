@@ -25,3 +25,16 @@
 (setq shift-select-mode nil)
 (setq default-directory "~/") 
 (setq command-line-default-directory "~/")
+(setq default-tab-width 4)
+
+(setq-default show-trailing-whitespace t) ; 行末の空白をハイライト
+(add-hook 'font-lock-mode-hook            ; タブをハイライト
+          (lambda ()
+            (font-lock-add-keywords
+             nil
+             '(("\t" 0 'trailing-whitespace prepend)))))
+
+;;; *.~ とかのバックアップファイルを作らない
+(setq make-backup-files nil)
+;;; .#* とかのバックアップファイルを作らない
+(setq auto-save-default nil)

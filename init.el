@@ -61,11 +61,11 @@
   (package-initialize))
 
 
-<<<<<<< HEAD
+
 
 (require 'my-function-init)
-=======
->>>>>>> 34154bc87c4684d59fb59dce12c360f8dd0023aa
+
+
 (require 'skk-init)
 (require 'keybind-init)
 (require 'twit-init)
@@ -80,15 +80,15 @@
 (require 'dired-init)
 (require 'ruby-init)
 (require 'php-mode-init)
-<<<<<<< HEAD
+(require 'helm-init)
 
 (require 'ibuffer-init)
 
-=======
+
 (require 'my-function-init)
 (require 'ibuffer-init)
 (require 'misc-init)
->>>>>>> 34154bc87c4684d59fb59dce12c360f8dd0023aa
+
 ;(require 'package-init)
 
 (set-face-background 'hl-line "cyan4")
@@ -128,3 +128,12 @@
 
 ;; (el-get 'sync)
 ;; (add-to-list 'el-get-recipe-path "~/.emacs.d/recipes")
+(put 'upcase-region 'disabled nil)
+
+
+(add-to-list 'auto-mode-alist '("\\.tpl\\'" . html-mode))
+
+;;(add-to-list 'load-path "~/.emacs.d/auto-complete")
+;;(require 'auto-complete-config)
+;;(ac-config-default)
+
