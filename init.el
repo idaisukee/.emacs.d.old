@@ -55,10 +55,10 @@
 ;;; interfacing with ELPA, the package archive.
 ;;; Move this code earlier if you want to reference
 ;;; packages in your .emacs.
-(when
-    (load
-     (expand-file-name "~/.emacs.d/elpa/package.el"))
-  (package-initialize))
+;; (when
+;;     (load
+;;      (expand-file-name "~/.emacs.d/elpa/package.el"))
+;;   (package-initialize))
 
 
 
@@ -109,7 +109,15 @@
  '(completions-common-part ((t (:inherit default :background "black" :foreground "yellow" :slant normal :weight normal :height 150 :width normal))))
  '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face :foreground "HotPink4"))))
  '(font-lock-comment-face ((t (:foreground "dark turquoise" :slant oblique))))
+ '(font-lock-function-name-face ((t (:foreground "orange" :height 1.1))))
+ '(font-lock-string-face ((t (:foreground "hot pink"))))
+ '(font-lock-variable-name-face ((t (:foreground "DodgerBlue1"))))
  '(org-meta-line ((t (:inherit font-lock-comment-face :background "black" :foreground "white"))))
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "purple"))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "lawn green"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "blue"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "powder blue"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "gold"))))
  '(twittering-username-face ((t (:foreground "orange" :underline t))))
  '(whitespace-space ((t (:background "black" :foreground "darkgray"))))
  '(whitespace-tab ((t (:background "black" :foreground "darkgray")))))
@@ -137,3 +145,12 @@
 ;;(require 'auto-complete-config)
 ;;(ac-config-default)
 
+;; cask
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
+
+
+
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
