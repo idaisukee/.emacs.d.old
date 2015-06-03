@@ -5,5 +5,5 @@
 	     (define-key php-mode-map (kbd "<tab>") 'execute-extended-command)
 	     (define-key php-mode-map (kbd "C-c C-c") (kbd "C-c c C-m"))))
 
-
+(setq php-mode-force-pear t) ; indentation with PEAR style
 (provide 'php-mode-init)
