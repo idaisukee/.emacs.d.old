@@ -85,7 +85,7 @@
 (require 'my-function-init)
 (require 'ibuffer-init)
 (require 'misc-init)
-(require 'helm-init)
+;(require 'helm-init)
 ;(require 'package-init)
 
 (set-face-background 'hl-line "cyan4")
