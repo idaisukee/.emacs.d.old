@@ -54,7 +54,7 @@
 (global-set-key [f10] 'delete-window)
 (global-set-key (kbd "S-<muhenkan>") 'delete-window)
 ;;;(global-set-key [tab] 'execute-extended-command)
-(global-set-key [tab] 'helm-M-x)
+(global-set-key [tab] 'helm-M)
 
 (global-set-key [left] 'backward-char)
 (global-set-key [right] 'forward-char)
