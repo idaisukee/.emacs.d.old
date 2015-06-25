@@ -5,4 +5,5 @@
 ;;;	     (define-key shell-mode-map (kbd "C-d") 'backward-char))
 ;;;)
 
+(setq eshell-cmpl-ignore-case t)
 (provide 'eshell-mode-init)

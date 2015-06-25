@@ -1,7 +1,7 @@
 (require 'powerline)
 
 ;;; (left) background, color1, color2, color1, background (right)
-
+;;;(powerline-default-theme)
 (set-face-attribute 'mode-line nil
 ;                    :background "OliveDrab3"
 ;                    :background "OliveDrab"

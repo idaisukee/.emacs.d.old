@@ -1,5 +1,3 @@
-(provide 'misc-init)
-
 (global-whitespace-mode -1)
 (blink-cursor-mode -1)
 (global-hl-line-mode 1)
@@ -41,3 +39,8 @@
 
 (setq inhibit-splash-screen t)
 
+(put 'upcase-region 'disabled nil)
+(setq exec-path (cons "/usr/bin" exec-path))
+
+(provide 'misc-init)
+;(exec-path-from-shell-initialize)
