@@ -147,8 +147,8 @@
 (ac-config-default)
 
 ;; cask
-(require 'cask "~/.cask/cask.el")
-(cask-initialize)
+;;(require 'cask "~/.cask/cask.el")
+;;(cask-initialize)
 
 
 

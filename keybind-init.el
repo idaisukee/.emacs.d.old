@@ -55,6 +55,7 @@
 (global-set-key (kbd "S-<muhenkan>") 'delete-window)
 ;;;(global-set-key [tab] 'execute-extended-command)
 (global-set-key [tab] 'helm-M-x)
+
 (global-set-key [left] 'backward-char)
 (global-set-key [right] 'forward-char)
 ;;;(global-set-key (kbd "S-<left>") 'backward-kill-word)
