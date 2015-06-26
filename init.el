@@ -3,6 +3,7 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (require 'load-path-init)
 
+
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 (setq uniquify-ignore-buffers-re "*[^*]+*")
@@ -86,6 +87,7 @@
 (require 'ibuffer-init)
 (require 'misc-init)
 (require 'helm-init)
+(require 'magit)
 ;(require 'package-init)
 
 (set-face-background 'hl-line "cyan4")
