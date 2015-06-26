@@ -7,5 +7,5 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 ;;(add-to-list 'load-path "/usr/share/emacs24/site-lisp/ddskk")
 (add-to-list 'load-path "~/.emacs.d/twittering-mode-3.0.0")
-
+(add-to-list 'load-path "~/.emacs.d/auto-complete")
 (provide 'load-path-init)
