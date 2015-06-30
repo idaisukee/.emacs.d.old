@@ -9,6 +9,10 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
+
+
+(el-get-bundle! f)
+
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 

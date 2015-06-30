@@ -23,7 +23,9 @@
 						(unload-feature feat t))))
 				  (require 'el-get))))
  (f status "installed" recipe
-	(:name f :website "https://github.com/rejeep/f.el" :description "Modern API for working with files and directories in Emacs" :depends
+	(:name f :features
+		   (f)
+		   :after nil :website "https://github.com/rejeep/f.el" :description "Modern API for working with files and directories in Emacs" :depends
 		   (s dash)
 		   :type github :pkgname "rejeep/f.el"))
  (s status "installed" recipe
