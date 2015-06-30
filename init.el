@@ -1,8 +1,13 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 
-(require 'keybind-init)
-(require 'misc-init)
-(require 'my-function-init)
+(setq list-of-files-to-require
+	  (list
+	   'keybind-init
+	   'misc-init
+	   'my-function-init
+	   'php-mode))
 
-(require 'php-mode)
+(dolist (file-to-require list-of-files-to-require)
+  (require file-to-require))
+
