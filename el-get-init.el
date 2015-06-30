@@ -7,5 +7,6 @@
     (eval-print-last-sexp)))
 
 (el-get-bundle! f)
+(el-get-bundle! helm)
 
 (provide 'el-get-init)
