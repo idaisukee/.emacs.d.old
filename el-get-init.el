@@ -8,5 +8,8 @@
 
 (el-get-bundle! f)
 (el-get-bundle! helm)
+(el-get-bundle! magit)
+
+
 
 (provide 'el-get-init)
