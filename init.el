@@ -5,16 +5,21 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 (add-to-list 'load-path "~/.emacs.d/init-files/")
 
+(require 'el-get-init)
 
-(setq list-of-files-to-require
+(setq files-to-require
 	  (list
-	   'el-get-init
-	   'keybind-init
-	   'misc-init
-	   'my-function-init
+;;;	   'keybind-init
+;;;	   'misc-init
+;;;	   'my-function-init
 	   'php-mode))
 
+(append files-to-require
+		(mapcar 'intern
+				(mapcar 'f-base
+						(f-glob "*-init.el" (locate-user-emacs-file "init-files")))))
 
-(dolist (file-to-require list-of-files-to-require)
-  (require file-to-require))
+;;(dolist (file-to-require files-to-require)
+;;  (require file-to-require))
 
+(mapcar 'require files-to-require)
