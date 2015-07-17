@@ -21,3 +21,10 @@ pcmanfm &
 pcmanfm &
 wi0
 wi
+princ 'home'
+(princ 'home)
+ls
+(ls)
+$HOME
+echo $HOME
+kb
