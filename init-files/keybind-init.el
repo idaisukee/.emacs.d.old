@@ -87,6 +87,12 @@
 (define-key minibuffer-local-map (kbd "C-h") 'next-history-element)
 
 
+;; (makunbound 'overriding-minor-mode-map)
+(define-minor-mode overriding-minor-mode
+  "force keybinds"             ; description
+  t                                     ; enable default
+  ""                                    ; display nothing in the modeline
+  `((,(kbd "C-t") . previous-line)))
 
 
 (provide 'keybind-init)

@@ -8,7 +8,7 @@
 
 (el-get-bundle! f)
 (el-get-bundle! helm)
-(el-get-bundle! magit)
+;;;(el-get-bundle! magit)
 
 
 
