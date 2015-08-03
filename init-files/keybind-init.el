@@ -92,7 +92,8 @@
   "force keybinds"             ; description
   t                                     ; enable default
   ""                                    ; display nothing in the modeline
-  `((,(kbd "C-t") . previous-line)))
+  `((,(kbd "C-t") . previous-line)
+	(,(kbd "C-@") . undo)))
 
 
 (provide 'keybind-init)
