@@ -83,6 +83,8 @@
 (global-unset-key (kbd "C-p"))
 (global-unset-key (kbd "C-f"))
 
+(global-unset-key (kbd "C-u"))
+
 (define-key minibuffer-local-map (kbd "C-t") 'previous-history-element)
 (define-key minibuffer-local-map (kbd "C-h") 'next-history-element)
 
@@ -93,7 +95,13 @@
   t                                     ; enable default
   ""                                    ; display nothing in the modeline
   `((,(kbd "C-t") . previous-line)
-	(,(kbd "C-@") . undo)))
+	(,(kbd "C-@") . undo)
+	(,(kbd "C-u") . end-of-line)
+	(,(kbd "C-o") . scroll-up-command)
+	(,(kbd "C-e") . scroll-down-command)
+	))
+
+
 
 
 (provide 'keybind-init)
