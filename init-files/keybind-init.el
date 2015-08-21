@@ -53,7 +53,6 @@
 ;;;(global-set-key [f9] 'save-buffer)
 (global-set-key [f10] 'delete-window)
 (global-set-key (kbd "S-<muhenkan>") 'delete-window)
-(global-set-key [tab] 'execute-extended-command)
 ;;;(global-set-key [tab] 'helm-M-x)
 (global-set-key [left] 'backward-char)
 (global-set-key [right] 'forward-char)
@@ -99,6 +98,7 @@
 	(,(kbd "C-u") . end-of-line)
 	(,(kbd "C-o") . scroll-up-command)
 	(,(kbd "C-e") . scroll-down-command)
+	(,(kbd "<tab>") . execute-extended-command)
 	))
 
 
