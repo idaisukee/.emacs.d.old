@@ -64,7 +64,6 @@
 (global-set-key (kbd "C-r") 'delete-char)
 (global-set-key (kbd "C-S-r") 'kill-word)
 (global-set-key (kbd "C-S-k")  'kill-sentence)
-(global-set-key (kbd "C-d") 'backward-char)
 (global-set-key (kbd "C-S-d") 'backward-word)
 (global-set-key (kbd "C-h") 'next-line)
 (global-set-key (kbd "C-t") 'previous-line)
@@ -101,6 +100,7 @@
 	(,(kbd "C-e") . scroll-down-command)
 	(,(kbd "<tab>") . execute-extended-command)
 	(,(kbd "C-p") . yank)
+	(,(kbd "C-d") . backward-char)
 	))
 
 
