@@ -83,6 +83,7 @@
 (global-unset-key (kbd "C-f"))
 
 (global-unset-key (kbd "C-u"))
+(global-unset-key (kbd "C-y"))
 
 (define-key minibuffer-local-map (kbd "C-t") 'previous-history-element)
 (define-key minibuffer-local-map (kbd "C-h") 'next-history-element)
@@ -99,6 +100,7 @@
 	(,(kbd "C-o") . scroll-up-command)
 	(,(kbd "C-e") . scroll-down-command)
 	(,(kbd "<tab>") . execute-extended-command)
+	(,(kbd "C-p") . yank)
 	))
 
 
