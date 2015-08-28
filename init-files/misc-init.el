@@ -1,6 +1,6 @@
 (provide 'misc-init)
 
-(global-whitespace-mode -1)
+(global-whitespace-mode t)
 (blink-cursor-mode -1)
 (global-hl-line-mode 1)
 

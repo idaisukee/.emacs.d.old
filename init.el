@@ -13,6 +13,8 @@
 	   'misc-init
 	   'my-function-init
 	   'alias-init
-	   'php-mode))
+	   'php-mode
+	   'appearance-init
+	   'face-init))
 
 (mapcar 'require files-to-require)
