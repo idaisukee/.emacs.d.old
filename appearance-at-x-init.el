@@ -20,6 +20,7 @@
 
 (set-fontset-font "fontset-default"
 		  'japanese-jisx0208
-		  '("ヒラギノ角ゴ ProN W3"))
+;;;		  '("ヒラギノ角ゴ ProN W3"))
+		  '("Migu 1M"))
 
 (provide 'appearance-at-x-init)
