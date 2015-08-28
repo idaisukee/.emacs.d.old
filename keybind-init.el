@@ -86,6 +86,24 @@
 (define-key minibuffer-local-map (kbd "C-t") 'previous-history-element)
 (define-key minibuffer-local-map (kbd "C-h") 'next-history-element)
 
+(global-unset-key (kbd "C-u"))
+(global-unset-key (kbd "C-y"))
+
+
+;; (makunbound 'overriding-minor-mode-map)
+(define-minor-mode overriding-minor-mode
+  "force keybinds"             ; description
+  t                                     ; enable default
+  ""                                    ; display nothing in the modeline
+  `((,(kbd "C-t") . previous-line)
+	(,(kbd "C-@") . undo)
+	(,(kbd "C-u") . end-of-line)
+	(,(kbd "C-o") . scroll-up-command)
+	(,(kbd "C-e") . scroll-down-command)
+	(,(kbd "<tab>") . execute-extended-command)
+	(,(kbd "C-p") . yank)
+	(,(kbd "C-d") . backward-char)
+	))
 
 
 
