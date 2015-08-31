@@ -24,6 +24,17 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 
+(defun my-kill-region nil
+  (interactive)
+  (kill-region (point) (mark)))
+
+(defun my-copy-region-as-kill nil
+  (interactive)
+  (copy-region-as-kill (point) (mark)))
+
+(defun insert-date-time nil
+  (interactive)
+  (insert (format-time-string "%m %d %H%M" (current-time))))
 
 (provide 'my-function-init)
 

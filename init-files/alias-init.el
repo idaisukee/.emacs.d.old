@@ -8,4 +8,5 @@
 (defalias 'ap 'apropos)
 (defalias 'ff 'find-function)
 (defalias 'kb 'kill-buffer)
+(defalias 'id 'insert-date-time)
 (provide 'alias-init)
