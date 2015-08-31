@@ -23,6 +23,9 @@
 
 (global-unset-key (kbd "C-u"))
 (global-unset-key (kbd "C-y"))
+(global-unset-key (kbd "C-w"))
+(global-unset-key (kbd "M-w"))
+
 
 
 ;; (makunbound 'overriding-minor-mode-map)
@@ -90,6 +93,8 @@
 	(,(kbd "C-S-n") . forward-word)
 	(,(kbd "M-o") . find-file)
 	(,(kbd "C-S-w") . save-buffers-kill-terminal)
+	(,(kbd "C-,") . my-copy-region-as-kill)
+	(,(kbd "C-.") . my-kill-region)
 	))
 
 
