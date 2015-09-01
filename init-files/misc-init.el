@@ -7,8 +7,8 @@
 (savehist-mode 1)
 (show-paren-mode 1)
 ;;;(display-time)
-(line-number-mode 1)
-(column-number-mode 1)
+(line-number-mode -1)
+(column-number-mode -1)
 (transient-mark-mode 1)
 (setq message-log-max 10000)
 (setq enable-recursive-minibuffers t)
@@ -25,7 +25,7 @@
 (setq shift-select-mode nil)
 (setq default-directory "~/") 
 (setq command-line-default-directory "~/")
-(setq default-tab-width 4)
+(setq default-tab-width 2)
 
 (setq-default show-trailing-whitespace t) ; 行末の空白をハイライト
 (add-hook 'font-lock-mode-hook            ; タブをハイライト
