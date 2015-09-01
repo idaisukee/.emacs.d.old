@@ -15,6 +15,7 @@
 	   'alias-init
 	   'php-mode
 	   'appearance-init
-	   'face-init))
+	   'face-init
+	   'whitespace-init))
 
 (mapcar 'require files-to-require)

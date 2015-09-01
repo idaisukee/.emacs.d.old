@@ -3,7 +3,6 @@
 (global-whitespace-mode t)
 (blink-cursor-mode -1)
 (global-hl-line-mode 1)
-
 (savehist-mode 1)
 (show-paren-mode 1)
 ;;;(display-time)
