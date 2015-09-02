@@ -1,6 +1,7 @@
 (defalias 'dk 'describe-key)
 (defalias 'dkb 'describe-key-briefly)
 (defalias 'db 'describe-bindings)
+(defalias 'dfa 'describe-face)
 (defalias 'df 'describe-function)
 (defalias 'dv 'describe-variable)
 (defalias 'dm 'describe-mode)
