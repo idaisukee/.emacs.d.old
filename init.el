@@ -16,6 +16,7 @@
 	   'php-mode
 	   'appearance-init
 	   'face-init
-	   'whitespace-init))
+	   'whitespace-init
+		 'shell-mode-init))
 
 (mapcar 'require files-to-require)
