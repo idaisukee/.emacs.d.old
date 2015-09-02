@@ -4,6 +4,7 @@
 (blink-cursor-mode -1)
 (global-hl-line-mode -1)
 (global-linum-mode 1)
+(setq linum-format "%5d")
 (savehist-mode 1)
 (show-paren-mode 1)
 ;;;(display-time)
