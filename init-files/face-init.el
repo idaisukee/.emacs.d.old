@@ -21,6 +21,9 @@
  '(font-lock-function-name-face ((t (:foreground "orange" :height 1.1))))
  '(font-lock-string-face ((t (:foreground "hot pink"))))
  '(font-lock-variable-name-face ((t (:foreground "DodgerBlue1"))))
+ '(mode-line ((t (:background "blue violet" :foreground "white"))))
+ '(mode-line-buffer-id ((t (:foreground "white"))))
+ '(mode-line-inactive ((t (:background "violet" :foreground "white"))))
  '(org-meta-line ((t (:inherit font-lock-comment-face :background "black" :foreground "white"))))
  '(rainbow-delimiters-depth-1-face ((t (:foreground "#00ff00"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "#0000ff"))))
@@ -32,5 +35,7 @@
  '(twittering-username-face ((t (:foreground "orange" :underline t))))
  '(whitespace-space ((t (:background "black" :foreground "darkgray"))))
  '(whitespace-tab ((t (:background "black" :foreground "darkgray")))))
+
+
 
 (provide 'face-init)
