@@ -1,6 +1,6 @@
 (global-whitespace-mode -1)
 (blink-cursor-mode -1)
-(global-hl-line-mode 1)
+(global-hl-line-mode -1)
 
 (savehist-mode 1)
 (show-paren-mode 1)
