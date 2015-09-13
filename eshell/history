@@ -28,3 +28,9 @@ ls
 $HOME
 echo $HOME
 kb
+ls
+ll
+ls -l
+cd .emacs.d/
+git log
+ls
