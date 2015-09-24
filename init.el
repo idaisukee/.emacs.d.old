@@ -17,6 +17,7 @@
 	   'appearance-init
 	   'face-init
 	   'whitespace-init
-		 'shell-mode-init))
+		 'shell-mode-init
+		 'yaml-mode))
 
 (mapcar 'require files-to-require)
