@@ -33,7 +33,12 @@
   (copy-region-as-kill (point) (mark)))
 
 
+(defun insert-date-time nil
+  (interactive)
+  (insert (format-time-string "%m %d %H%M" (current-time))))
 
-
+(defun insert-year-date-time nil
+  (interactive)
+  (insert (format-time-string "%Y %m%d %H%M" (current-time))))
 (provide 'my-function-init)
 
