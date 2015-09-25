@@ -17,6 +17,7 @@
 	   'face-init
 	   'whitespace-init
 		 'shell-mode-init
+		 'skk-init
 		 ))
 
 (mapcar 'require files-to-require)
