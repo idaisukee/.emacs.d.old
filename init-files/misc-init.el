@@ -28,12 +28,12 @@
 (setq command-line-default-directory "~/")
 (setq default-tab-width 2)
 
-(setq-default show-trailing-whitespace t) ; 行末の空白をハイライト
-(add-hook 'font-lock-mode-hook            ; タブをハイライト
-          (lambda ()
-            (font-lock-add-keywords
-             nil
-             '(("\t" 0 'trailing-whitespace prepend)))))
+(setq-default show-trailing-whitespace nil) ; 行末の空白をハイライトするか
+;; (add-hook 'font-lock-mode-hook            ; タブをハイライト
+;;           (lambda ()
+;;             (font-lock-add-keywords
+;;              nil
+;;              '(("\t" 0 'trailing-whitespace prepend)))))
 
 ;;; *.~ とかのバックアップファイルを作らない
 (setq make-backup-files nil)
