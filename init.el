@@ -13,11 +13,10 @@
 	   'misc-init
 	   'my-function-init
 	   'alias-init
-	   'php-mode
 	   'appearance-init
 	   'face-init
 	   'whitespace-init
 		 'shell-mode-init
-		 'yaml-mode))
+		 ))
 
 (mapcar 'require files-to-require)
