@@ -36,5 +36,9 @@
   (interactive)
   (insert (format-time-string "%m %d %H%M" (current-time))))
 
+(defun dired-pwd nil
+	(interactive)
+	(dired default-directory))
+
 (provide 'my-function-init)
 

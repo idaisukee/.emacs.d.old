@@ -73,6 +73,7 @@
 	(,(kbd "C-<f8>") . show-lub)
 ;;;(,[f9] . save-buffer)
 	(,(kbd "<f10>") . delete-window)
+	(,(kbd "<f11>") . dired-pwd)
 	(,(kbd "S-<muhenkan>") . delete-window)
 	(,(kbd "<tab>") . helm-M-x)
 	(,(kbd "<left>") . backward-char)
