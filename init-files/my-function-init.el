@@ -36,6 +36,23 @@
   (interactive)
   (insert (format-time-string "%m %d %H%M" (current-time))))
 
+(defun insert-year-date-time nil
+  (interactive)
+  (insert (format-time-string "%Y %m%d %H%M" (current-time))))
+
+(defun prepare-article nil
+	(interactive)
+	(insert "
+article:
+  time: ")
+	(insert-year-date-time)
+	(insert "
+  main: | 
+  range:
+    - public
+  tag:"))
+
+
 (defun dired-pwd nil
 	(interactive)
 	(dired default-directory))
