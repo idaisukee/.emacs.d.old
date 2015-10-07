@@ -9,5 +9,10 @@
 (defalias 'ap 'apropos)
 (defalias 'ff 'find-function)
 (defalias 'kb 'kill-buffer)
+(defalias 'kemacs 'kill-emacs)
 (defalias 'id 'insert-date-time)
+(defalias 'rb 'revert-buffer)
+(defalias 'cr 'comment-region)
+(defalias 'ucr 'uncomment-region)
+
 (provide 'alias-init)
