@@ -12,6 +12,9 @@
 (defalias 'kemacs 'kill-emacs)
 (defalias 'id 'insert-date-time)
 (defalias 'rb 'revert-buffer)
+(defalias 'md 'make-directory)
+(defalias 'cp 'dired-do-copy)
+(defalias 'mv 'dired-do-rename)
 (defalias 'cr 'comment-region)
 (defalias 'ucr 'uncomment-region)
 
