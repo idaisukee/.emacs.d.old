@@ -17,5 +17,6 @@
 (defalias 'mv 'dired-do-rename)
 (defalias 'cr 'comment-region)
 (defalias 'ucr 'uncomment-region)
+(defalias 's 'smart-compile)
 
 (provide 'alias-init)

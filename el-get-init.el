@@ -11,6 +11,7 @@
 (el-get-bundle! php-mode)
 (el-get-bundle! yaml-mode)
 (el-get-bundle ddskk)
+(el-get-bundle zenitani/elisp)
 
 ;;;(el-get-bundle! magit)
 
