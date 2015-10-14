@@ -6,6 +6,13 @@
 										:family "inconsolata"
 										:height height)
 
+(when (eq window-system 'x)
+	(set-fontset-font "fontset-default" 'japanese-jisx0208
+										'("Migu 1M"))
+  (set-fontset-font "fontset-default" 'katakana-jisx0201
+										'("Migu 1M")))
+
+
 (when (eq window-system 'ns)
 	(setq height 200)
 
