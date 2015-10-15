@@ -15,7 +15,7 @@
  '(button ((t (:background "white" :foreground "black" :weight light))))
  '(comint-highlight-prompt ((t (:inherit minibuffer-prompt :foreground "cyan1" :inverse-video t))))
  '(completions-common-part ((t (:inherit default :background "black" :foreground "yellow" :slant normal :weight normal :height 150 :width normal))))
- '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face :foreground "HotPink4"))))
+ '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face :foreground "yellow"))))
  '(font-lock-comment-face ((t (:foreground "dark turquoise" :slant normal))))
  '(font-lock-constant-face ((t (:foreground "violet" :weight bold))))
  '(font-lock-function-name-face ((t (:foreground "orange" :height 1.1))))
