@@ -25,6 +25,7 @@
 (global-unset-key (kbd "C-y"))
 (global-unset-key (kbd "C-w"))
 (global-unset-key (kbd "M-w"))
+(global-unset-key (kbd "M-y"))
 
 
 
@@ -41,6 +42,7 @@
 	(,(kbd "C-e") . scroll-down-command)
 	(,(kbd "<tab>") . execute-extended-command)
 	(,(kbd "C-p") . yank)
+	(,(kbd "C-S-p") . yank-pop)
 	(,(kbd "C-d") . backward-char)
 ;	(,(kbd "C-o o") . skk-hiragana-set)
 ;	(,(kbd "C-o e") . skk-katakana-set)
