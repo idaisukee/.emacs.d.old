@@ -27,7 +27,8 @@
 (global-unset-key (kbd "M-w"))
 (global-unset-key (kbd "M-y"))
 
-
+(global-unset-key (kbd "M-h"))
+(global-unset-key (kbd "M-t"))
 
 ;; (makunbound 'overriding-minor-mode-map)
 (define-minor-mode overriding-minor-mode
@@ -99,6 +100,10 @@
 	(,(kbd "C-S-w") . save-buffers-kill-terminal)
 	(,(kbd "C-,") . my-copy-region-as-kill)
 	(,(kbd "C-.") . my-kill-region)
+	(,(kbd "M-h") . shrink-window)
+	(,(kbd "M-t") . enlarge-window)
+	
+
 	))
 
 
