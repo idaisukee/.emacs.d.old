@@ -42,7 +42,7 @@
 
 (defun prepare-article nil
 	(interactive)
-	(insert "
+	(insert "---
 article:
   time: ")
 	(insert-year-date-time)
