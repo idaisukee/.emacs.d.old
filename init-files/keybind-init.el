@@ -41,8 +41,8 @@
 	(,(kbd "C-u") . end-of-line)
 	(,(kbd "C-o") . scroll-up-command)
 	(,(kbd "C-e") . scroll-down-command)
-	(,(kbd "C-S-o") . beginning-of-buffer)
-	(,(kbd "C-S-e") . end-of-buffer)
+	(,(kbd "C-S-e") . beginning-of-buffer)
+	(,(kbd "C-S-o") . end-of-buffer)
 
 	(,(kbd "<tab>") . execute-extended-command)
 	(,(kbd "C-p") . yank)
