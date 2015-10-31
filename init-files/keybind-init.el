@@ -81,6 +81,7 @@
 	(,(kbd "<f9>") . prepare-article)
 	(,(kbd "<f10>") . delete-window)
 	(,(kbd "<f11>") . dired-pwd)
+	(,(kbd "C-<f11>") . dired)
 	(,(kbd "S-<muhenkan>") . delete-window)
 	(,(kbd "<tab>") . helm-M-x)
 	(,(kbd "<left>") . backward-char)
