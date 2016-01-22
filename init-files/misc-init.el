@@ -27,6 +27,7 @@
 (setq default-directory "~/") 
 (setq command-line-default-directory "~/")
 (setq default-tab-width 2)
+(setq dired-dwim-target t)
 
 (setq-default show-trailing-whitespace nil) ; 行末の空白をハイライトするか
 ;; (add-hook 'font-lock-mode-hook            ; タブをハイライト
