@@ -12,6 +12,7 @@
 (el-get-bundle! yaml-mode)
 (el-get-bundle ddskk)
 (el-get-bundle zenitani/elisp)
+(el-get-bundle syohex/emacs-git-gutter)
 
 ;;;(el-get-bundle! magit)
 
