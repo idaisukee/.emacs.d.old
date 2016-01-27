@@ -28,6 +28,8 @@
 (setq command-line-default-directory "~/")
 (setq default-tab-width 2)
 (setq dired-dwim-target t)
+(require 'editorconfig)
+(editorconfig-mode 1)
 
 (setq-default show-trailing-whitespace nil) ; 行末の空白をハイライトするか
 ;; (add-hook 'font-lock-mode-hook            ; タブをハイライト
